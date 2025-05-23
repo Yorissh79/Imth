@@ -13,7 +13,7 @@ const Form = () => {
         name: Yup.string().required().min(3, "Name must be at least 3 characters"),
         image: Yup.string().required().min(3, "Image must be at least 3 characters"),
         description: Yup.string().required().min(3, "Description must be at least 3 characters"),
-        price: Yup.string().required().min(3, "Price must be at least 3 characters"),
+        price: Yup.string().required().min(1, "Price must be at least 1 characters"),
     })
 
     const formik = useFormik({
