@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 6rem;
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .top {
+      font-size: 80px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .f {
+      font-weight: 500;
+      color: #000000;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .s {
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.27);
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+@media screen and (max-width: 576px) and (min-width: 300px) {
+  .main {
+
+    flex-direction: column;
+  }
+}

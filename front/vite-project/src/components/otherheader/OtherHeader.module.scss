@@ -1,0 +1,30 @@
+.main {
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    height: 60px;
+    width: 100%;
+    a {
+      text-decoration: none;
+      font-weight: 400;
+      font-size:  24px;
+      color: black;
+      text-transform: uppercase ;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 300px) {
+  .main {
+
+    .right {
+      gap: 1rem;
+      a {
+        font-size: 16px;
+      }
+    }
+
+  }
+}
