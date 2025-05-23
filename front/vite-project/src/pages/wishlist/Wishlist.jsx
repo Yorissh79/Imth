@@ -16,7 +16,10 @@ const Wishlist = () => {
 
     return (
        <div className={style.main}>
-           <Helmet title="Home" meta="description" />
+           <Helmet>
+               <title>Wishlist</title>
+               <meta name="title" content="Wishlist" />
+           </Helmet>
            <Backcard data={data} who={"wishlist"} />
        </div>
     )

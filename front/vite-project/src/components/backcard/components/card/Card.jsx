@@ -62,6 +62,12 @@ const Card = ({item, who}) => {
                 <button onClick={() => {addBasket("1")}}>Add to basket</button>
                 <button onClick={() => {addWishlist()}}>Add to wishlist</button>
             </div> : null}
+            <div className={style.overlay}>
+                <p>{item.name}</p>
+                <p>{item.description}</p>
+                <p>{item.price}</p>
+            </div>
+            {who === "home" ? <button onClick={() => {}}>Detail page</button> : null}
         </div>
     )
 }

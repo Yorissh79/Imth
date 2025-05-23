@@ -21,7 +21,10 @@ const Admin = () => {
 
     return (
        <div className={style.main}>
-           <Helmet title="Home" meta="description" />
+           <Helmet>
+               <title>Admin</title>
+               <meta name="title" content="Admin" />
+           </Helmet>
             <Form/>
            <Backcard data={data} who={"admin"} />
        </div>

@@ -30,6 +30,7 @@ const Form = () => {
                 it: String("item" + Math.random() * 123456)
             }
             dispatch(postProductThunk(data))
+            formik.handleReset()
         }
     })
 

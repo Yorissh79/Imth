@@ -17,7 +17,10 @@ const Basket = () => {
 
     return (
        <div className={style.main}>
-           <Helmet title="Home" meta="description" />
+           <Helmet>
+               <title>Basket</title>
+               <meta name="title" content="Basket" />
+           </Helmet>
            <Backcard data={data} who={"basket"} />
        </div>
     )

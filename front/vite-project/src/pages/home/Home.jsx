@@ -20,7 +20,10 @@ const Home = () => {
 
     return (
        <div className={style.main}>
-           <Helmet title="Home" meta="description" />
+           <Helmet>
+               <title>"Home"</title>
+               <meta name="title" content="Home" />
+           </Helmet>
            <Fsection/>
            <Ssection/>
            <Backcard data={data} who={"home"} />
