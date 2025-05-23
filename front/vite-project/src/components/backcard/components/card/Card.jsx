@@ -67,7 +67,7 @@ const Card = ({item, who}) => {
                 <p>{item.description}</p>
                 <p>{item.price}</p>
             </div>
-            {who === "home" ? <button onClick={() => {}}>Detail page</button> : null}
+            {/*{who === "home" ? <button onClick={() => {}}>Detail page</button> : null}*/}
         </div>
     )
 }
