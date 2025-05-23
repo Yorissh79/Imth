@@ -6,6 +6,7 @@ import Otherlayout from "../components/otherlayout/Otherlayout.jsx";
 import Admin from "../pages/admin/Admin.jsx";
 import Basket from "../pages/basket/Basket.jsx";
 import Wishlist from "../pages/wishlist/Wishlist.jsx";
+import Detail from "../components/detail/Detail.jsx";
 
 export const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
                 Component: Wishlist,
             }
         ]
+    },
+    {
+        path: '/item',
+        Component: Detail,
     },
     {
         path: '*',
