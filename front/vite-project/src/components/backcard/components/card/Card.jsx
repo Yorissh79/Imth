@@ -54,7 +54,7 @@ const Card = ({item, who}) => {
             {who === "basket" ? <div>
                 <button onClick={() => {deleteBasket()}}>Delete</button>
                 <button onClick={() => {addBasket("1")}}>Add</button>
-                <button onClick={() => {addBasket("-1")}}>Dec</button>
+                {item.count > 1 ? <button onClick={() => {addBasket("-1")}}>Dec</button> : null}
             </div> : null}
             {who === "wishlist" ? <button onClick={() => {deleteWishlist()}}>Delete</button> : null}
             {who === "admin" ? <button onClick={() => {deleteAdmin()}}>Delete</button> : null}
