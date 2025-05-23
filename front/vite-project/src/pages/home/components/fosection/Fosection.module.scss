@@ -2,7 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 6rem;
+  background-color: #F7F6F2;
+  padding: 6rem 0;
+  text-align: center;
 
   .left {
      .f {
@@ -19,6 +22,36 @@
   }
 
   .right {
+    input {
+      padding: 14px;
+      width: 400px;
+      border:  none;
+    }
+
+    button {
+      background-color: #82AE46;
+      padding:  14px;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 300px) {
+  .main {
+
+    flex-direction:  column;
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      input {
+        width: 100%;
+      }
+    }
 
   }
 }

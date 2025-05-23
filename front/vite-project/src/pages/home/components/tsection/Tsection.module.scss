@@ -8,6 +8,7 @@
   margin-top: 6rem;
   margin-bottom: 6rem;
   font-family: "Lora";
+  text-align: center;
 
   .top {
     display: flex;
@@ -73,5 +74,19 @@
         text-align: center;
       }
     }
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 300px) {
+  .main {
+
+    .cards {
+      flex-direction: column;
+
+      .card {
+        width: 100%;
+      }
+    }
+
   }
 }

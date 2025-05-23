@@ -12,6 +12,7 @@
   width: 100%;
   gap: 30px;
   position: relative;
+  text-align: center;
 
   .text {
     padding: 100px 0px ;
@@ -65,7 +66,14 @@
 @media screen and (max-width: 576px) and (min-width: 300px) {
   .main {
 
-
+      .text {
+        .f {
+          width: 100%;
+          font-size: 40px;
+          font-weight: 300;
+          color: black;
+        }
+      }
 
   }
 }
